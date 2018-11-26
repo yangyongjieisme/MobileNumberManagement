@@ -1,18 +1,26 @@
 How to deploy and run the program 
 
 1. Download projects from Github
-
-2. For 
-
-b) in console, go to YOUR_UNZIPPED_DIR, run the following command
-    mvn spring-boot:run
-   to start to server, once server statred the url is http://localhost:8080 
-c) go into YOUR_UNZIPPED_DIR/script, you will see 
-     runRequest.sh  -- a bash script to run the http requests
-     input.csv   -- the input data (You can change the data as you want)
-   After running the script, result.txt will be generated containing the running output
-   
-d) Alternatively, yu can use curl or run in browsers. Following is the endpoints with example data:
-
   
+  a) https://github.com/yangyongjieisme/SpringCloudEurekaNamingServer.git
+   	 to folder, eg : /eureka_server
+  b) https://github.com/yangyongjieisme/MobileNumberManagement.git
+  	 to folder, eg: number_management 
+
+2. in  /eureka_server , run 
+	mvn spring-boot:run
+   this	will create the registry server
+   in /number_management, run
+   mvn spring-boot:run
+   this will start the service server.
+   
+   After all the servers are up, go to http://localhost:8761/, you should see the service server is registered
+   
+
+3. in /number_management/script
+	run the shell script, ./runRequest.sh
+   you should be able to see sample out	  
  
+ 
+ 4. You can edit /number_management/src/main/resources schema.sql to change the initial loaded data ,
+    and edit /number_management/script/runRequest.sh for requests.
