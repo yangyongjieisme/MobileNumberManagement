@@ -22,5 +22,5 @@ How to deploy and run the program
    you should be able to see sample out	  
  
  
- 4. You can edit /number_management/src/main/resources schema.sql to change the initial loaded data ,
+ 4. You can edit /number_management/src/main/resources/schema.sql to change the initial loaded data ,
     and edit /number_management/script/runRequest.sh for requests.
