@@ -1,7 +1,10 @@
 package com.myrepublic.numbermanage.dto;
 
 import java.util.Date;
-
+/**
+ * @date 2018/11/25
+ * @desc DTO
+ */
 public class UserMobileDTO {
 
 	private String account;

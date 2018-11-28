@@ -1,5 +1,7 @@
 How to deploy and run the program 
 
+0. Requires Maven 3+, java 1.8+
+
 1. Download projects from Github
   
   a) https://github.com/yangyongjieisme/SpringCloudEurekaNamingServer.git

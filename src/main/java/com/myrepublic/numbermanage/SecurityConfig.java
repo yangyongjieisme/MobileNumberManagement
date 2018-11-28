@@ -33,7 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/unBindNumber").hasRole("USER")
 				.antMatchers("/bindService").hasRole("USER")	
 				.antMatchers("/unBindService").hasRole("USER")		
-				.antMatchers("/unUserFullPicture").hasRole("USER")	
+				.antMatchers("/getUserFullPicture").hasRole("USER")	
 				.antMatchers("/error").permitAll()
 				.antMatchers("/**").hasRole("USER")
 				.and().csrf().disable().headers().frameOptions().disable();
